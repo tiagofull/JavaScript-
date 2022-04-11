@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro-usuario.css">
+    <title>Cadastro de usuários</title>
+</head>
+<body>
+    <main>
+        <div class="grid-container">
+            <header class="grid-cabecalho">
+                <div class="logo">
+                    SENAI
+                </div>
+                <div class="barra-titulo">
+                    <div id="icone" class="usuario">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <img src="img/klebys.jpg" alt="foto do usuário">
+                        <span class="nome"> Krabs</span>
+                    </div>
+                </div>
+            </header> <!--Fim do cabeçalho-->
+
+            <aside>
+
+                <div class="logo">
+                    <div>
+                        <img src="img/klebys.jpg" alt="foto do usuário">
+                    </div>
+                    <div >
+                        <span class="nome"> Krabs</span>
+                        <<br><small class="online"> online</small>
+                    </div>
+                </div>
+                <div class="menu">MENU</div>
+                <div class="usuarios"> <small>  Usuários </small></div>
+            </aside> <!--Fim da barra lateral-->
+
+            <section class="grid-principal">
+                <div class="titulo">
+                    <div class="esquerda">
+                        <span>Usuários</span> 
+                        <small>Gerenciamento de usuários do sistema</small>
+                    </div>
+                    <div class="direita">
+                        <img src="img/home.png" alt="home">
+                        <small>Home <span> &gt; </span> usuarios </small>
+                    </div>
+                </div> <!--fim da classe titulo-->
+
+                <div class="grid-usuarios">
+                    <div class="lista-usuarios">
+                        Lista de usuários
+                    </div>
+                    <div class="tit">Foto</div>
+                    <div class="tit">Nome</div>
+                    <div class="tit">E-mail</div>
+                    <div class="tit">Admin</div>
+                    <div class="tit">Criado em</div>
+                    <div class="tit">Ações</div>
+
+                    <div><img src="img/klebys.jpg" alt="" srcset=""></div>
+                    <div>Krabs</div>
+                    <div>krabs@example.com</div>
+                    <div>sim</div>
+                    <div>31/03/2022</div>
+                    <div class="acoes">
+                        <span class="editar">Editar</span>
+                        <span class="excluir">Excluir</span>
+                    </div>
+
+                    <div><img src="img/tiozao.png" alt="" srcset=""></div>
+                    <div>Tiozão</div>
+                    <div>tiozao@example.com</div>
+                    <div>sim</div>
+                    <div>31/03/2022</div>
+                    <div class="acoes">
+                        <span class="editar">Editar</span>
+                        <span class="excluir">Excluir</span>
+                    </div>
+
+                   
+                </div>
+                
+                <aside>
+                    <div class="novos-usuarios">
+                        <div class="user">
+                            <div class="num">  10</div>
+                            <div class="num1"> novos usuarios</div>
+                        </div>
+                        <div class="admin">
+                            <div class="num">  5</div>
+                            <div class="num1"> Administradores</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="formulario">
+                        <h3>Novo usuário</h3>
+                        
+                        <form action="" id="form">
+                            <label for="nome">Nome </label>
+                            <input type="text" id="nome">
+                            <label for="genero">Gênero</label>
+                            <div>
+                                <input type="radio" name="genero" class="genero" value="Masculino">
+                                <label for="masculino">Masculino</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="genero" class="genero" value="Feminino">
+                                <label for="feminino">Feminino</label>
+                            </div>
+                            <label for="nascimento">Nascimento</label>
+                            <input type="date" id="nascimento">
+                            <label for="pais">País</label>
+                            <select name="pais" id="pais">
+                                <option value="">Argentina</option>
+                                <option value="" selected>Brasil</option>
+                                <option value="">Paraguai</option>
+                                <option value="">Uruguai</option>
+                            </select>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" id="senha">
+                            <label for="foto">Foto</label>
+                            <input type="file" name="foto" id="foto">
+                            <div>
+                                <input type="checkbox" name="admin" id="admin">
+                                <label for="admin">Administrador</label>
+                            </div>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </aside>
+
+            </section>
+        </div>
+
+    </main>
+
+</body>
+</html>
